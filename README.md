@@ -11,3 +11,5 @@ A modern, multi-page gym website built with a focus on high-end UI/UX and smooth
 - HTML5 / CSS3 (Custom Properties & Flexbox)
 - JavaScript (ES6+)
 - [Anime.js](https://animejs.com/) for motion design
+
+- http://127.0.0.1:3000/index.html
