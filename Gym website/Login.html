@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Portal | Gold Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-bg">
+    <nav class="navbar main-nav">
+    <div class="nav-container">
+        <div class="logo"><a href="index.html">GOLD<span>GYM</span></a></div>
+        <ul class="nav-menu">
+            <li><a href="GetStarted.html" class="nav-item">Get Started</a></li>
+            <li><a href="OurPlans.html" class="nav-item">Our Plans</a></li>
+            <li><a href="Our Franchise.html" class="nav-item">Our Franchise</a></li>
+            <li><a href="Contact Us.html" class="nav-item">Contact Us</a></li>
+        </ul>
+        
+        <div class="auth-box">
+            <a href="Login.html?mode=login" class="nav-login-link">Login</a>
+            <a href="Login.html?mode=signup" class="btn-signup-nav">Sign Up</a>
+        </div>
+    </div>
+</nav>
+
+   <section class="login-container">
+    <div class="login-box animate-login">
+        <h2>MEMBER LOGIN</h2>
+        <p class="subtitle">Enter your credentials to access the gym portal</p>
+        
+        <form id="login-form">
+            <div class="input-group">
+                <label>Email or Member ID</label>
+                <input type="text" placeholder="e.g. gold_member_123" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            
+            <button type="submit" class="btn-primary-block">SIGN IN</button>
+        </form>
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <button class="btn-google">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo">
+            Sign in with Google
+        </button>
+
+        <div class="login-footer">
+            <p>New to Gold Gym? <a href="GetStarted.html">Create an Account</a></p>
+            <p><a href="#" class="forgot">Forgot Password?</a></p>
+        </div>
+    </div>
+</section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        // Specific animation for the login box entrance
+        anime({
+            targets: '.animate-login',
+            scale: [0.9, 1],
+            opacity: [0, 1],
+            duration: 1000,
+            easing: 'easeOutElastic(1, .8)'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Excellence | GOLD GYM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar main-nav">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">GOLD<span>GYM</span></a></div>
+            <ul class="nav-menu">
+                <li><a href="GetStarted.html" class="nav-item">Get Started</a></li>
+                <li><a href="OurPlans.html" class="nav-item">Our Plans</a></li>
+                <li><a href="OurFranchise.html" class="nav-item">Our Franchise</a></li>
+                <li><a href="ContactUs.html" class="nav-item">Contact Us</a></li>
+            </ul>
+            <div class="auth-box">
+                <a href="Login.html" class="nav-login-link">Login</a>
+                <a href="signup.html" class="btn-signup-nav">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="know-hero">
+        <div class="hero-content animate-hero">
+            <h1>ELITE FACILITIES</h1>
+            <p>From Olympic-grade weights to luxury recovery zones, we redefine fitness.</p>
+            <div class="facility-tags">
+                <span>24/7 Access</span>
+                <span>Personal Training</span>
+                <span>Spa & Sauna</span>
+                <span>Diet Consultation</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="care-section">
+        <div class="container">
+            <h2>HOW WE CARE FOR YOU</h2>
+            <div class="care-grid">
+                <div class="care-card">
+                    <h3>Personalized Onboarding</h3>
+                    <p>Every member gets a 1-on-1 body composition analysis and a custom workout starter kit.</p>
+                </div>
+                <div class="care-card">
+                    <h3>Safety First</h3>
+                    <p>Certified trainers are always on the floor, and equipment is sanitized every 60 minutes.</p>
+                </div>
+                <div class="care-card">
+                    <h3>Nutrition Support</h3>
+                    <p>Our in-house nutritionists track your macros to ensure your kitchen work matches your gym work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="auto-slider-section">
+        <div class="slider-container" id="main-gallery">
+            <div class="gym-slide active" style="background-image: url('gym-view-1.jpg');">
+                <div class="slide-text"><h1>PREMIUM CARDIO ZONE</h1></div>
+            </div>
+            <div class="gym-slide" style="background-image: url('gym-view-2.jpg');">
+                <div class="slide-text"><h1>HEAVY WEIGHTS AREA</h1></div>
+            </div>
+            <div class="gym-slide" style="background-image: url('gym-view-3.jpg');">
+                <div class="slide-text"><h1>CROSSFIT ARENA</h1></div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-logo">GOLD<span>GYM</span></div>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Franchise FAQ</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">X</a>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2026 GOLD GYM India. All Rights Reserved.</p>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        // Auto Slider Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.gym-slide');
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(nextSlide, 4000); // Change image every 4 seconds
+    </script>
+</body>
+</html>

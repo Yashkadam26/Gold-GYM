@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Legacy | GOLD GYM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar main-nav">
+    <div class="nav-container">
+        <div class="logo"><a href="index.html">GOLD<span>GYM</span></a></div>
+        <ul class="nav-menu">
+            <li><a href="GetStarted.html" class="nav-item">Get Started</a></li>
+            <li><a href="OurPlans.html" class="nav-item">Our Plans</a></li>
+            <li><a href="Our Franchise.html" class="nav-item">Our Franchise</a></li>
+            <li><a href="Contact Us.html" class="nav-item">Contact Us</a></li>
+        </ul>
+        
+       <div class="auth-box">
+    <a href="signup.html" class="btn-signup-nav">Sign Up</a>
+    <a href="Login.html" class="nav-login-link">Login</a>
+</div>
+    </div>
+</nav>
+
+    <header class="story-hero">
+        <h1>THE LEGACY OF IRON</h1>
+        <p>A journey from a single basement to a global fitness empire.</p>
+    </header>
+
+    <section class="timeline-container">
+    <div class="timeline-track">
+        <div id="glow-line" class="glow-line"></div>
+        <div id="glow-pulse" class="glow-pulse"></div>
+    </div>
+
+    <div class="step" id="step-1990">
+        <div class="step-number">1990</div>
+        <div class="step-content">
+            <h2>The Iron Garage</h2>
+            <p>Founded in a dusty garage in Mumbai. Our founder, driven by pure passion, hand-welded the first squat rack. We started with 5 members and a dream to change Indian fitness forever.</p>
+        </div>
+    </div>
+
+    <div class="step" id="step-1998">
+    <div class="step-number">1998</div>
+    <div class="step-content">
+        <h2>Professional Arena</h2>
+        <p>We moved from the garage to our first 5,000 sq. ft. facility. This year marked our partnership with international bodybuilding legends.</p>
+    </div>
+</div>
+
+    <div class="step" id="step-2005">
+        <div class="step-number">2005</div>
+        <div class="step-content">
+            <h2>The Franchise Boom</h2>
+            <p>Gold Gym becomes a household name. We opened our 20th center, introducing world-class cardio equipment and certified personal training to the middle class.</p>
+        </div>
+    </div>
+
+    <div class="step" id="step-2012">
+    <div class="step-number">2012</div>
+    <div class="step-content">
+        <h2>50 Cities Strong</h2>
+        <p>From Mumbai to Delhi, Gold Gym became the standard for fitness in India. We introduced the first 'Group X' classes including Zumba and HIIT.</p>
+    </div>
+</div>
+
+    <div class="step" id="step-2015">
+        <div class="step-number">2015</div>
+        <div class="step-content">
+            <h2>Digital Integration</h2>
+            <p>We launched our first mobile app. No more paper workout logs—members started tracking their progress digitally, setting the stage for a data-driven fitness era.</p>
+        </div>
+    </div>
+
+    <div class="step" id="step-2020">
+    <div class="step-number">2020</div>
+    <div class="step-content">
+        <h2>The Virtual Pivot</h2>
+        <p>When the world stopped, we didn't. We launched 'Gold Gym at Home,' reaching over 50,000 users through live-streamed sessions daily.</p>
+    </div>
+</div>
+
+    <div class="step" id="step-2022">
+        <div class="step-number">2022</div>
+        <div class="step-content">
+            <h2>Hybrid Fitness</h2>
+            <p>Survival of the fittest. We pivoted to hybrid models, offering home-workout streaming alongside our elite physical floor space to keep India moving during tough times.</p>
+        </div>
+    </div>
+
+    <div class="step" id="step-2026">
+        <div class="step-number">2026</div>
+        <div class="step-content">
+            <h2>AI & Bio-Hacking</h2>
+            <p>Today. With AI-integrated machines and recovery bio-pods, we aren't just a gym; we are a human performance lab. The legacy continues with you.</p>
+        </div>
+    </div>
+</section>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top">
+    ↑ Top
+</button>
+
+    <footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-logo">GOLD<span>GYM</span></div>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Franchise FAQ</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">X</a>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2026 GOLD GYM India. All Rights Reserved.</p>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        // Scroll Logic for the Glowing Dot
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            
+            // Move the glowing dot based on scroll percentage
+            document.getElementById("glow-pointer").style.top = scrolled + "%";
+        };
+    </script>
+</body>
+</html>

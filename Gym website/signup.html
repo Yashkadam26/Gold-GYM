@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Transformation | GOLD GYM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="signup-bg">
+   <nav class="navbar main-nav">
+    <div class="nav-container">
+        <div class="logo"><a href="index.html">GOLD<span>GYM</span></a></div>
+        <ul class="nav-menu">
+            <li><a href="GetStarted.html" class="nav-item">Get Started</a></li>
+            <li><a href="OurPlans.html" class="nav-item">Our Plans</a></li>
+            <li><a href="Our Franchise.html" class="nav-item">Our Franchise</a></li>
+            <li><a href="Contact Us.html" class="nav-item">Contact Us</a></li>
+        </ul>
+        
+       <div class="auth-box">
+    <a href="signup.html" class="btn-signup-nav">Sign Up</a>
+    <a href="Login.html" class="nav-login-link">Login</a>
+</div>
+    </div>
+</nav>
+
+    <section class="signup-container">
+        <div class="signup-box animate-signup">
+            <div class="signup-header">
+                <h1>CREATE PROFILE</h1>
+                <p>Step 1: Your Personal Stats</p>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
+
+            <form id="registration-form">
+                <div class="form-section">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    
+                    <div class="form-row">
+                        <div class="input-col">
+                            <label>Age</label>
+                            <input type="number" placeholder="24" required>
+                        </div>
+                        <div class="input-col">
+                            <label>Gender</label>
+                            <select required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label>Your Primary Goal</label>
+                    <div class="goal-grid">
+                        <label class="goal-option">
+                            <input type="radio" name="goal" value="muscle" checked>
+                            <span>Muscle Gain</span>
+                        </label>
+                        <label class="goal-option">
+                            <input type="radio" name="goal" value="weight">
+                            <span>Weight Loss</span>
+                        </label>
+                        <label class="goal-option">
+                            <input type="radio" name="goal" value="cardio">
+                            <span>Endurance</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="email@example.com" required>
+                    <label>Create Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-primary-block">FINISH & START TRAINING</button>
+            </form>
+        </div>
+        
+        <div class="divider"><span>OR JOIN WITH</span></div>
+<button class="btn-google">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" style="width:18px"> 
+    Google Account
+</button>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        anime({
+            targets: '.animate-signup',
+            translateY: [50, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            easing: 'easeOutExpo'
+        });
+    </script>
+</body>
+</html>
